@@ -1,2 +1,2 @@
 # Proyecto-APFilms
-Este repositorio es diseñado para la asignatura de Programación y Diseño de Aplicaciones.
+Este desarrollo web esta diseñado para ofrecer servicios de peliculas, series y cortometrajes.
