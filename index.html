@@ -12,6 +12,9 @@
   <meta name="keywords" content="Cine, Peliculas, Series, Reseñas, Entretenimiento">
   <meta name="author" content="Diego Alcántara">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 <!--Es la configuracion de toda la pagina web-->
   <link rel="stylesheet" href="css/style.css">
@@ -81,10 +84,63 @@ aria-controls="mobile-menu">☰</button>
     </header>
 
     <main>
+        <!-- SECCION CARRUSEL-->
 
-<h1>This is a Heading</h1>
+        <section id="carrusel" class="carousel-section container">
+           <h2>This is a Heading</h2>
+           <div class="carousel-track" id="carouseltrackebc">
+                <div class="carousel-slide">
+                    <img src="img/quienes somos.jpg" alt="imagen APFilms1">
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="img/Peliculas.jpg" alt="imagen APFilms2">
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="img/series.jpg" alt="imagen APFilms3">
+                </div>
+
+
+
+           </div>
+
+        </section>
+
+
+
+
 <p>This is a paragraph.</p>
 
     </main>
+<footer>
+  <div class="footer-social">
+    <div class="container social-icons">
+      <a href="https://www.facebook.com/?locale=es_LA" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/its_fer.ap?utm_source=ig_web_button_share_sheet&xtok=ZDNlZDc0MzIxNw%3D%3D" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.youtube.com/" aria-label="YouTube">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+      <a href="https://mx.linkedin.com/" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="https://x.com/" aria-label="X (Twitter)">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      &copy; <span id="anio"></span> APFilms - Todos los derechos reservados.
+    </div>
+  </div>
+
+</footer>
+
+<script src="js/cript.js"></script>
 </body>
 </html>
