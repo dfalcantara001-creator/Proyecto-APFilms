@@ -53,11 +53,12 @@
 
     </nav>
 
-<button id="menu-toggle" class="menu-toggle" 
-aria-label="Abrir menú" aria-expanded="false" 
-aria-controls="mobile-menu">☰</button>
-</div>
+<button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
 
+<!--Navegacion Movil-->
 <nav id="mobile-menu" class="mobile-nav">
       <ul>
          <li>
@@ -75,42 +76,124 @@ aria-controls="mobile-menu">☰</button>
              <li>
             <a hred="#contacto">Contacto</a>
             </li>  
-      </ul>
-     
+      </ul>  
     </nav>
-
     </div>
-    
     </header>
 
-    <main>
-        <!-- SECCION CARRUSEL-->
+<!--INICIO MAIN (PRINCIPAL) del DESARROLLO WEB-->
 
-        <section id="carrusel" class="carousel-section container">
-           <h2>This is a Heading</h2>
+    <main>
+        <!--HERO / CARRUSEL INTERACTIVO DE 3 IMAGENES-->
+        <section id="inicio" class="hero-section">
            <div class="carousel-track" id="carouseltrackebc">
+
+            <!--Diapositiva 1 (Tu Branding)-->
                 <div class="carousel-slide">
                     <img src="img/quienes somos.jpg" alt="imagen APFilms1">
+                    <div class="slide-overlay">
+                        <span class="badge">Quienes Somos</span>
+                        <h1>Descubre <span class="highlight-yellow">Quienes Somos</span></h1>
+                        <p>Ver peliculas y series, hacer reseñas, y subir tus propias producciones en un solo lugar</p>
+                        <a href="#servicios" class="btn-hero">Conocer mas</a>
+                    </div>
                 </div>
 
+                <!--Diapositva 2-->
                 <div class="carousel-slide">
                     <img src="img/Peliculas.jpg" alt="imagen APFilms2">
+                    <div class="slide-overlay">
+                        <span class="badge">Peliculas</span>
+                        <h1>Todo El Cine <span class="highlight-yellow">En Tu Casa</span></h1>
+                        <p>Transformamos tu espacio en una experiencia inmersiva.</p>
+                        <a href="#servicios" class="btn-hero">Descubrir catalogo</a>
+                    </div>
                 </div>
 
+                <!--Diapositiva 3-->
                 <div class="carousel-slide">
                     <img src="img/series.jpg" alt="imagen APFilms3">
+                    <div class="slide-overlay">
+                        <span class="badge">Series</span>
+                        <h1>Miles De Series <span class="highlight-yellow">Cuando Tu Quieras</span></h1>
+                        <p>Tu escoges, nosotros lo ponemos.</p>
+                        <a href="#servicios" class="btn-hero">Descubrir catalogo</a>
+                    </div>
                 </div>
-
-
 
            </div>
 
+            <!-- Botones de Navegación del Carrusel -->
+            <button id="btn-prev" class="carousel-arrow prev" aria-label="Imagen anterior">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button id="btn-next" class="carousel-arrow next" aria-label="Imagen siguiente">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <!-- Puntos Indicadores -->
+            <div class="carousel-dots" id="carousel-dots">
+                <button class="dot active" aria-label="Ir a diapositiva 1"></button>
+                <button class="dot" aria-label="Ir a diapositiva 2"></button>
+                <button class="dot" aria-label="Ir a diapositiva 3"></button>
+            </div>
+
         </section>
 
+        <!-- SECCIÓN DE SERVICIOS -->
+        <section id="servicios" class="servicios-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>NUESTROS SERVICIOS</h2>
+                    <h3>Soluciones de Entretenimiento en Casa</h3>
+                </div>
 
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-couch"></i></div>
+                        <h4>Lenguaje Audiovisual</h4>
+                        <p>Asesoramiento integral para poder hacer tus propias producciones.</p>
+                    </div>
 
+                     <div class="card">
+                        <div class="card-icon red"><i class="fa-solid fa-volume-high"></i></div>
+                        <h4>Entretenimiento</h4>
+                        <p>Visualizacion de peliculas y series.</p>
+                    </div>
 
-<p>This is a paragraph.</p>
+                    <div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-microchip"></i></div>
+                        <h4>Reseñas</h4>
+                        <p>Redacta y califica tu opinion.</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- SECCIÓN NOSOTROS -->
+        <section id="nosotros" class="nosotros-section">
+            <div class="container nosotros-inner">
+                <div class="nosotros-img">
+                    <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Experiencia cine en familia">
+                </div>
+                <div class="nosotros-info">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <h3>Apasionados por el séptimo arte y la produccion.</h3>
+                    <p>En <strong>APFilms</strong>, bajo la dirección del Lic. Diego Alcántara, integramos una experiencia unica de Entretenimiento
+                      y poder hacer tus propias producciones en un solo lugar.</p>
+                    <div class="stats">
+                        <div class="stat-box">
+                            <span class="stat-num yellow">+100</span>
+                            <span class="stat-lbl">Peliculas y series</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num red">100%</span>
+                            <span class="stat-lbl">Satisfacción</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 <footer>
@@ -128,7 +211,7 @@ aria-controls="mobile-menu">☰</button>
       <a href="https://mx.linkedin.com/" aria-label="LinkedIn">
         <i class="fa-brands fa-linkedin-in"></i>
       </a>
-      <a href="https://x.com/" aria-label="X (Twitter)">
+      <a href="https://x.com/?lang=es" aria-label="X (Twitter)">
         <i class="fa-brands fa-x-twitter"></i>
       </a>
     </div>
